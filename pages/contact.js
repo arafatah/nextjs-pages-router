@@ -5,6 +5,10 @@ export default function Contact() {
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState('');
 
+  function handleSubmit(){
+    
+  }
+
   return (
     <div>
       <h1 className='text-4xl mb-8 text-accent-400 font-medium'>
@@ -12,7 +16,7 @@ export default function Contact() {
       </h1>
 
       <form className='bg-primary-900 py-10 px-14 text-lg space-y-6 max-w-5xl mx-auto'>
-        <div className='space-y-2'>
+        <div className='space-y-2' onSubmit={handleSubmit}>
           <label>Full name</label>
           <input
             required
